@@ -9,7 +9,7 @@ const Reviews = () => {
     const [feedbacks, setFeedbacks] = useState([]);
 
     useEffect(() => {
-        fetch("http://localhost:5000/feedbacks", {
+        fetch("https://fast-citadel-29159.herokuapp.com/feedbacks", {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json'
@@ -25,7 +25,7 @@ const Reviews = () => {
     return (
         <div className="my-5 container">
             <div>
-                <h3 className="my-5 text-center font-weight-bold">Clients <span style={{color:"#7AB259"}}>Feedback</span></h3>
+                <h3 className="my-5 text-center font-weight-bold">Clients <span style={{ color: "#7AB259" }}>Feedback</span></h3>
                 <div className="row">
                     {
                         feedbacks.map(feedback => <Review feedback={feedback}></Review>)

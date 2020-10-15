@@ -1,7 +1,6 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import SideBar from '../SideBar/SideBar';
-import logo from "../../../images/logos/logo.png";
 import { useForm } from 'react-hook-form';
 import { UserContext } from '../../../App';
 
@@ -11,7 +10,7 @@ const FeedBack = () => {
 
     const onSubmit = data => {
         const feedbackDetails = { ...loggedInUser, data: data, registrationTime: new Date() };
-        fetch('http://localhost:5000/addFeedback', {
+        fetch('https://fast-citadel-29159.herokuapp.com/addFeedback', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -32,7 +31,7 @@ const FeedBack = () => {
                 <div className="col-md-3 mt-5">
                     <div className="mb-5">
                         <Link to="/home">
-                            <img className="img-fluid w-50" src={logo} alt="" />
+                            <img className="img-fluid w-50" src="https://lh3.googleusercontent.com/z-ekO_iHt8QWJowY9hlCnhBBTrMIETnY_wsxyylieTNgmsnk-Du5AK1MZKM_sDTDZi_OVrVqmaQJGPXeip8879J72IgCKQduGUWqCW1OFiZ2fcvkJNVCnXkCBuTq2J3QaDoREyXD-g=w2400" alt="" />
                         </Link>
                     </div>
                     <SideBar></SideBar>
@@ -40,7 +39,7 @@ const FeedBack = () => {
                 <div className="col-md-8 mt-5">
                     <h1 className="font-weight-bold">Review</h1>
                     <div className="bg-light p-5 rounded mb-4">
-                        <form onSubmit={handleSubmit(onSubmit)} style={{width:"600px",marginTop:"80px"}}>
+                        <form onSubmit={handleSubmit(onSubmit)} style={{ width: "600px", marginTop: "80px" }}>
                             <div className="form-group">
                                 <input type="email" name="email" value={loggedInUser.email} ref={register({ required: true })} placeholder="Your email address" className="form-control form-control-lg" />
                             </div>

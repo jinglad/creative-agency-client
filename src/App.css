@@ -8,3 +8,21 @@
 .ml-275{
     margin-left: 275px;
 }
+
+
+
+@media only screen and (max-width:576px){
+  .contact-us-info{
+    margin-left: 50px;
+  }
+  .copyright{
+    margin-left: 150px;
+  }
+  .header-main-info{
+    margin-left: 50px;
+    margin-bottom: 30px;
+  }
+  .header-main-img{
+    margin-left:-50px;
+  }
+}

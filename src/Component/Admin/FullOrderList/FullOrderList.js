@@ -1,8 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { UserContext } from '../../../App';
-import logo from "../../../images/logos/logo.png";
-import RegService from '../../Customer/RegService/RegService';
 import SideBar from '../../Customer/SideBar/SideBar';
 
 const FullOrderList = () => {
@@ -12,7 +10,7 @@ const FullOrderList = () => {
     // console.log(loggedInUser)
 
     useEffect(() => {
-        fetch(`http://localhost:5000/fullOrderList`, {
+        fetch(`https://fast-citadel-29159.herokuapp.com/fullOrderList`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json'
@@ -30,7 +28,7 @@ const FullOrderList = () => {
                 <div className="col-md-3 mt-5">
                     <div className="mb-5">
                         <Link to="/home">
-                            <img className="img-fluid w-50" src={logo} alt="" />
+                            <img className="img-fluid w-50" src="https://lh3.googleusercontent.com/z-ekO_iHt8QWJowY9hlCnhBBTrMIETnY_wsxyylieTNgmsnk-Du5AK1MZKM_sDTDZi_OVrVqmaQJGPXeip8879J72IgCKQduGUWqCW1OFiZ2fcvkJNVCnXkCBuTq2J3QaDoREyXD-g=w2400" alt="" />
                         </Link>
                     </div>
                     <SideBar></SideBar>
@@ -50,12 +48,12 @@ const FullOrderList = () => {
                             </thead>
                             <tbody>
                                 {
-                                    orders.map(order => 
-                                        <tr className="border">  
+                                    orders.map(order =>
+                                        <tr className="border">
                                             <td>{order.name}</td>
                                             <td>{order.email}</td>
                                             <td>{order.service}</td>
-                                            <td style={{width:"100px"}}>{order.description}</td>
+                                            <td style={{ width: "100px" }}>{order.description}</td>
                                             <td className="btn btn-secondary">pending</td>
                                         </tr>)
                                 }

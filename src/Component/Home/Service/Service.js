@@ -11,11 +11,10 @@ const Service = (props) => {
         setServiceDetails(props.service);
     }
 
-    // console.log(serviceDetails);
     const icon = `data:image/jpeg;base64,${props.service.image.img}`;
 
     return (
-        <div className="col-md-4 text-center mt-4" onClick={handleAddService}>
+        <div className="col-lg-4 col-md-6 text-center mt-4" onClick={handleAddService}>
             <Link to="/order" className="text-decoration-none text-dark">
                 <div className="service-container">
                     <div>

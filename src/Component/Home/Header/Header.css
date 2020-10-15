@@ -13,3 +13,15 @@
     background: white;
     clip-path: polygon(100% 0,0 100%,100% 100%);
 }
+
+@media only screen and (max-width:980px){
+    .header-bg{
+        height: 850px;
+    }
+}
+
+@media only screen and (max-width:576px){
+    .header-bg{
+        height: 1100px;
+    }
+}

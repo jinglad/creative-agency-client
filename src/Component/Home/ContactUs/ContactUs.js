@@ -2,10 +2,10 @@ import React from 'react';
 
 const ContactUs = () => {
     return (
-        <div style={{background:"#FBD062",marginTop:"120px"}} className="py-5">
+        <div style={{ background: "#FBD062", marginTop: "120px" }} className="py-5">
             <div className="container">
                 <div className="row">
-                    <div className="col-md-4">
+                    <div className="col-md-4 contact-us-info">
                         <h2 className="font-weight-bold">Let us handle your <br /> project, professionally.</h2>
                         <p><small>With well written codes, we build amazing apps for all <br /> platforms, mobile and web apps in general.</small></p>
                     </div>
@@ -26,7 +26,7 @@ const ContactUs = () => {
                         </form>
                     </div>
                 </div>
-                <p className="mt-5 ml-275">copyright Orange labs 2020</p>
+                <p className="mt-5 ml-275 copyright">copyright Orange labs 2020</p>
             </div>
         </div>
     );

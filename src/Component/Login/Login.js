@@ -5,7 +5,6 @@ import { initializeLoginFramework, handleGoogleSignIn } from './loginManager';
 import './Login.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGoogle } from '@fortawesome/free-brands-svg-icons';
-import logo from "../../images/logos/logo.png";
 
 
 initializeLoginFramework();
@@ -39,7 +38,7 @@ const Login = () => {
         <div className="container">
             <div className="text-center mt-5">
                 <Link to="/home" href="#">
-                    <img src={logo} className="img-fluid w-25" alt="" />
+                    <img src="https://lh3.googleusercontent.com/z-ekO_iHt8QWJowY9hlCnhBBTrMIETnY_wsxyylieTNgmsnk-Du5AK1MZKM_sDTDZi_OVrVqmaQJGPXeip8879J72IgCKQduGUWqCW1OFiZ2fcvkJNVCnXkCBuTq2J3QaDoREyXD-g=w2400" className="img-fluid w-25" alt="" />
                 </Link>
             </div>
             <div className="text-center login-box">
