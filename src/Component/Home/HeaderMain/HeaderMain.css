@@ -1,0 +1,10 @@
+.btn-black{
+    color: white!important;
+    padding: 8px 28px;
+    background: black;
+    text-decoration: none!important;
+    border-radius: 5px;
+}
+.header-main-img img{
+    margin-left: 9rem!important;
+}
