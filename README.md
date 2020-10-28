@@ -1,9 +1,9 @@
 # Creative Agency
 
-Creative Agency is MERN project. User can find many services and can order any of the services. User can login and order any of the services. User can also give feedback. User can see all of their ordered services. 
-Admin can manage the websites from admin panel. Admin can see all users ordered services. Admin can add new services. Admin can remove services.
-This website has user authentication. Without authentication user cannot have the access to go to service order page and cannot see the ordered services also cannot give feedback.
-User don't have the access of the admin panel.
+* Creative Agency is MERN project. User can find many services and can order any of the services. User can login and order any of the services. User can also give feedback. User can see all of their ordered services. 
+* Admin can manage the websites from admin panel. Admin can see all users ordered services. Admin can add new services. Admin can remove services.
+* This website has user authentication. Without authentication user cannot have the access to go to service order page and cannot see the ordered services also cannot give feedback.
+* User don't have the access of the admin panel.
 
 ## Technologies
 
