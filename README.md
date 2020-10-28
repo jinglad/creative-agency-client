@@ -18,6 +18,7 @@ In this project following technologies are used:
 * React-hook-form 
 * React-Router
 
-[Resume](https://drive.google.com/file/d/1UZuM4RjUmLMNS9eqyeSiSOC02tR1nicv/view)
-[Server-side-code](https://github.com/jinglad/creative-agenct-backend)
-[Website](https://creative-agency-f57e2.web.app)
+## Links
+* [Resume](https://drive.google.com/file/d/1UZuM4RjUmLMNS9eqyeSiSOC02tR1nicv/view)
+* [Server-side-code](https://github.com/jinglad/creative-agenct-backend)
+* [Website](https://creative-agency-f57e2.web.app)
