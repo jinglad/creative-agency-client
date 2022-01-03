@@ -4,10 +4,9 @@ import { UserContext } from '../../../App';
 import SideBar from '../../Customer/SideBar/SideBar';
 
 const FullOrderList = () => {
-    const [orders, serOrders] = useState([]);
+    const [orders, setOrders] = useState([]);
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
 
-    // console.log(loggedInUser)
 
     useEffect(() => {
         fetch(`https://fast-citadel-29159.herokuapp.com/fullOrderList`, {
@@ -18,7 +17,7 @@ const FullOrderList = () => {
         })
             .then(res => res.json())
             .then(data => {
-                serOrders(data);
+                setOrders(data);
             })
     }, []);
 
