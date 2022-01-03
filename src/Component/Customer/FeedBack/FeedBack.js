@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import SideBar from "../SideBar/SideBar";
 import { useForm } from "react-hook-form";
 import { UserContext } from "../../../App";
+import LogoImage from "../../../images/logos/logo.png";
 
 const FeedBack = () => {
   const { register, handleSubmit, watch, errors } = useForm();
@@ -35,11 +36,7 @@ const FeedBack = () => {
         <div className="col-md-3 mt-5">
           <div className="mb-5">
             <Link to="/home">
-              <img
-                className="img-fluid w-50"
-                src="https://lh3.googleusercontent.com/z-ekO_iHt8QWJowY9hlCnhBBTrMIETnY_wsxyylieTNgmsnk-Du5AK1MZKM_sDTDZi_OVrVqmaQJGPXeip8879J72IgCKQduGUWqCW1OFiZ2fcvkJNVCnXkCBuTq2J3QaDoREyXD-g=w2400"
-                alt=""
-              />
+              <img className="img-fluid w-50" src={LogoImage} alt="" />
             </Link>
           </div>
           <SideBar></SideBar>

@@ -1,16 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
+import LogoImage from "../../../images/logos/logo.png";
 
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light">
-      <Link to="/home" className="navbar-brand">
-        <img
-          src="https://lh3.googleusercontent.com/z-ekO_iHt8QWJowY9hlCnhBBTrMIETnY_wsxyylieTNgmsnk-Du5AK1MZKM_sDTDZi_OVrVqmaQJGPXeip8879J72IgCKQduGUWqCW1OFiZ2fcvkJNVCnXkCBuTq2J3QaDoREyXD-g=w2400"
-          className="img-fluid w-50"
-          alt=""
-        />
+      <Link to="/home" className="navbar-brand" href="#">
+        <img src={LogoImage} className="img-fluid w-50" alt="" />
       </Link>
 
       <button
